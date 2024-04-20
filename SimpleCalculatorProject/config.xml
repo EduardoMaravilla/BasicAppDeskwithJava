@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>D:\Proyectos\Java\Proyectos\SimpleCalculatorProject\out\artifacts\Calculadora_jar\Calculadora.jar</jar>
+  <outfile>D:\Proyectos\Java\Proyectos\SimpleCalculatorProject\Calculator.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>true</restartOnCrash>
+  <manifest></manifest>
+  <icon>D:\Proyectos\Java\Proyectos\SimpleCalculatorProject\src\main\resources\images\calc.ico</icon>
+  <singleInstance>
+    <mutexName>Calculator.exe</mutexName>
+    <windowTitle>Calculator.exe</windowTitle>
+  </singleInstance>
+  <jre>
+    <path>%JAVA_HOME%</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+  </jre>
+</launch4jConfig>
