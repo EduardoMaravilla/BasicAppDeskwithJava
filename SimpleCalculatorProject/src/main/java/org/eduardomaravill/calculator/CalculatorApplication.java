@@ -5,6 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+
+
 import java.io.IOException;
 
 
@@ -17,6 +19,7 @@ public class CalculatorApplication extends Application {
         stage.setTitle("Calculator");
         stage.setScene(scene);
         stage.setResizable(false);
+        //scene.getStylesheets().add(BootstrapFX.bootstrapFXStylesheet());
         stage.show();
     }
 

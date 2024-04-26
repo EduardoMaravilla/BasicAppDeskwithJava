@@ -5,6 +5,18 @@ import java.util.Deque;
 
 public class Calculator {
 
+    private static Calculator calculator;
+
+    private Calculator() {
+    }
+
+    public static Calculator getInstance() {
+        if (calculator == null) {
+            calculator = new Calculator();
+        }
+        return calculator;
+    }
+
     public double calculate(String expression) throws IllegalArgumentException {
         // Eliminar espacios en blanco de la expresión
         expression = expression.replaceAll("\\s+", "");

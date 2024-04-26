@@ -127,7 +127,7 @@ public class CalculatorController {
     protected void resolveOperation(){
         String currentText = screenOperation.getText();
         if(!currentText.isEmpty() && !currentText.equals("-")) {
-            Calculator calculator = new Calculator();
+            Calculator calculator = Calculator.getInstance();
             double result;
             try {
                 result = calculator.calculate(currentText);

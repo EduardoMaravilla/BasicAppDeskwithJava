@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" style="-fx-background-color: #7c7b89;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.eduardomaravill.bankapp.controllers.transaction.TransactionViewController">
+   <children>
+      <Text fill="WHITE" layoutX="322.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Transactions" AnchorPane.topAnchor="14.41015625">
+         <font>
+            <Font name="Candara Light" size="20.0" />
+         </font>
+      </Text>
+      <ListView fx:id="transactionListView" layoutX="292.0" layoutY="275.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f1e4de;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="100.0" />
+   </children>
+</AnchorPane>
