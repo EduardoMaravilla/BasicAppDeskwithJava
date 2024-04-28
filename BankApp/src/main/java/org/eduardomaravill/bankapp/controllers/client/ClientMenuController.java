@@ -6,6 +6,7 @@ import org.eduardomaravill.bankapp.models.Model;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import static org.eduardomaravill.bankapp.views.ClientMenuOption.*;
 
 public class ClientMenuController implements Initializable {
     public Button dashboardButton;
@@ -27,14 +28,14 @@ public class ClientMenuController implements Initializable {
     }
 
     private void onTransaction() {
-        Model.getInstance().getViewFactory().getClientSelectedMenuItem().set("Transactions");
+        Model.getInstance().getViewFactory().getClientSelectedMenuItem().set(TRANSACTIONS);
     }
 
     private void onDashboard() {
-        Model.getInstance().getViewFactory().getClientSelectedMenuItem().set("Dashboard");
+        Model.getInstance().getViewFactory().getClientSelectedMenuItem().set(DASHBOARD);
     }
 
     private void onAccount() {
-        Model.getInstance().getViewFactory().getClientSelectedMenuItem().set("Accounts");
+        Model.getInstance().getViewFactory().getClientSelectedMenuItem().set(ACCOUNTS);
     }
 }

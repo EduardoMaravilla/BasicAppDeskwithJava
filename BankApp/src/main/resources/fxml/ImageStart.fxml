@@ -6,19 +6,18 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.eduardomaravill.bankapp.controllers.StartController">
-   <children>
-      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" AnchorPane.topAnchor="0.0">
-         <image>
-            <Image url="@../images/LogoBank.jpg" />
-         </image>
-      </ImageView>
-      <Button fx:id="initializeAppBank" layoutX="330.0" layoutY="539.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="140.0" text="GoToAppBank" textAlignment="CENTER">
-         <styleClass>
-            <String fx:value="btn" />
-            <String fx:value="btn-primary" />
-            <String fx:value="text-primary" />
-         </styleClass>
-      </Button>
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.eduardomaravill.bankapp.controllers.StartController">
+   <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" AnchorPane.topAnchor="0.0">
+      <Image url="@../images/LogoBank.jpg"/>
+   </ImageView>
+   <Button fx:id="initializeAppBank" layoutX="330.0" layoutY="539.0" mnemonicParsing="false" prefHeight="33.0"
+           prefWidth="140.0" text="GoToAppBank" textAlignment="CENTER">
+      <styleClass>
+         <String fx:value="btn"/>
+         <String fx:value="btn-primary"/>
+         <String fx:value="text-primary"/>
+      </styleClass>
+   </Button>
 </AnchorPane>

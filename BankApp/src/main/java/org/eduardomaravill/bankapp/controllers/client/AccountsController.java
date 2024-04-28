@@ -1,4 +1,4 @@
-package org.eduardomaravill.bankapp.controllers.client.acounts;
+package org.eduardomaravill.bankapp.controllers.client;
 
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;

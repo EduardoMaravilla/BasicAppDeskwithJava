@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="180.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.eduardomaravill.bankapp.controllers.client.ClientMenuController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="180.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.eduardomaravill.bankapp.controllers.admin.AdminMenuController">
    <AnchorPane prefHeight="750.0" prefWidth="180.0">
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-alignment: center;" AnchorPane.bottomAnchor="650.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
          <FontAwesomeIconView fill="#e9723d" glyphName="BANK" size="50" textAlignment="CENTER" wrappingWidth="56.0" />
@@ -30,9 +30,9 @@
          </Text>
       </VBox>
       <VBox layoutY="151.0" prefHeight="381.0" prefWidth="180.0" AnchorPane.bottomAnchor="227.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
-         <Button fx:id="dashboardButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #0b7fab; -fx-text-fill: #ffffff;" styleClass="btn" text="Dashboard" textFill="WHITE">
+         <Button fx:id="createClientButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #0b7fab; -fx-text-fill: #ffffff;" styleClass="btn" text="Create Client" textFill="WHITE">
             <graphic>
-               <FontAwesomeIconView fill="#f4d75e" glyphName="HOME" size="20" />
+               <FontAwesomeIconView fill="#f4d75e" glyphName="PLUS" size="20" />
             </graphic>
             <VBox.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
@@ -45,9 +45,9 @@
                </DropShadow>
             </effect>
          </Button>
-         <Button fx:id="transactionButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #0b7fab; -fx-text-fill: #ffffff;" styleClass="btn" text="Transaction" textFill="WHITE">
+         <Button fx:id="clientsButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #0b7fab; -fx-text-fill: #ffffff;" styleClass="btn" text="Clients" textFill="WHITE">
             <graphic>
-               <FontAwesomeIconView fill="#f4d75e" glyphName="HANDSHAKE_ALT" size="20" />
+               <FontAwesomeIconView fill="#f4d75e" glyphName="LIST" size="20" />
             </graphic>
             <VBox.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
@@ -60,9 +60,9 @@
                </DropShadow>
             </effect>
          </Button>
-         <Button fx:id="accountButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #0b7fab; -fx-text-fill: #ffffff;" styleClass="btn" text="Account" textFill="WHITE">
+         <Button fx:id="depositButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #0b7fab; -fx-text-fill: #ffffff;" styleClass="btn" text="Deposit" textFill="WHITE">
             <graphic>
-               <FontAwesomeIconView fill="#f4d75e" glyphName="ADDRESS_BOOK_ALT" size="20" />
+               <FontAwesomeIconView fill="#f4d75e" glyphName="MONEY" size="20" />
             </graphic>
             <VBox.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
@@ -96,21 +96,6 @@
                <Insets bottom="10.0" top="10.0" />
             </VBox.margin>
          </Line>
-         <Button fx:id="profileButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #7c7b89; -fx-text-fill: #ffffff;" styleClass="btn" text="Profile" textFill="WHITE">
-            <graphic>
-               <FontAwesomeIconView fill="#f4d75e" glyphName="USER" size="20" />
-            </graphic>
-            <VBox.margin>
-               <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
-            </VBox.margin>
-            <effect>
-               <DropShadow blurType="TWO_PASS_BOX" height="5.0" offsetX="5.0" offsetY="5.0" radius="0.75" width="0.0">
-                  <color>
-                     <Color red="0.6666666865348816" green="0.6666666865348816" blue="0.6666666865348816" />
-                  </color>
-               </DropShadow>
-            </effect>
-         </Button>
          <Button fx:id="logoutButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #7c7b89; -fx-text-fill: #ffffff;" styleClass="btn" text="Logout" textFill="WHITE">
             <graphic>
                <FontAwesomeIconView fill="#f4d75e" glyphName="EXTERNAL_LINK" size="20" />

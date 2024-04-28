@@ -7,7 +7,7 @@
         <fx:include source="ClientMenu.fxml"/>
     </left>
     <center>
-        <fx:include source="dashboard/Dashboard.fxml"/>
+        <fx:include source="Dashboard.fxml"/>
     </center>
 
 </BorderPane>

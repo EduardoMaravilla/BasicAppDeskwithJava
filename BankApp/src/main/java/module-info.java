@@ -18,9 +18,6 @@ module org.eduardomaravill.bankapp {
     exports org.eduardomaravill.bankapp.controllers;
     exports org.eduardomaravill.bankapp.controllers.admin;
     exports org.eduardomaravill.bankapp.controllers.client;
-    exports org.eduardomaravill.bankapp.controllers.client.dashboard;
-    exports org.eduardomaravill.bankapp.controllers.transaction;
-    exports org.eduardomaravill.bankapp.controllers.client.acounts;
     exports org.eduardomaravill.bankapp.models;
     exports org.eduardomaravill.bankapp.views;
 }
