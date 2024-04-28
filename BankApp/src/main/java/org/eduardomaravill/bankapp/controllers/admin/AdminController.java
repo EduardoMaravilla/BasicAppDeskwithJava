@@ -13,10 +13,11 @@ public class AdminController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        Model.getInstance().getViewFactory().getAdminSelectedMenuItem().addListener((observable, newValue, oldValue) -> {
-            switch (oldValue) {
+        Model.getInstance().getViewFactory().getAdminSelectedMenuItem().addListener((observable,oldValue,newValue) -> {
+            switch (newValue) {
                 case CREATE_CLIENT -> adminParent.setCenter(Model.getInstance().getViewFactory().getCreateClientView());
-                default -> adminParent.setCenter(Model.getInstance().getViewFactory().getCreateClientView());
+                case CLIENTS -> adminParent.setCenter(Model.getInstance().getViewFactory().getClientsView());
+                case DEPOSIT -> adminParent.setCenter(Model.getInstance().getViewFactory().getDepositView());
             }
         });
     }

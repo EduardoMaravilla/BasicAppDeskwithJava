@@ -21,6 +21,16 @@ public class AdminMenuController implements Initializable {
 
     private void addListeners() {
         createClientButton.setOnAction(e->onCreateClient());
+        clientsButton.setOnAction(e->onClients());
+        depositButton.setOnAction(e->onDeposit());
+    }
+
+    private void onDeposit() {
+        Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(DEPOSIT);
+    }
+
+    private void onClients() {
+        Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(CLIENTS);
     }
 
     private void onCreateClient() {

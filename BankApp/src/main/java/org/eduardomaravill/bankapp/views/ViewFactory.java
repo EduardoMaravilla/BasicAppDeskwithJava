@@ -3,6 +3,7 @@ package org.eduardomaravill.bankapp.views;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
@@ -82,6 +83,8 @@ public class ViewFactory {
     //Admin View
     private final ObjectProperty<AdminMenuOption> adminSelectedMenuItem;
     private AnchorPane createClientView;
+    private AnchorPane clientsView;
+    private AnchorPane depositView;
      /*
     Admin view factory section
       */
@@ -98,6 +101,27 @@ public class ViewFactory {
             }
         }
         return createClientView;
+    }
+    public AnchorPane getClientsView() {
+        if (clientsView == null){
+            try {
+                clientsView = new FXMLLoader(getClass().getResource("/fxml/admin/Clients.fxml")).load();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return clientsView;
+    }
+
+    public AnchorPane getDepositView() {
+        if (depositView == null){
+            try {
+                depositView = new FXMLLoader(getClass().getResource("/fxml/admin/Deposit.fxml")).load();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return depositView;
     }
     /*
     Admin view factory section
@@ -147,4 +171,6 @@ public class ViewFactory {
     public void closeStage(Stage stage){
         stage.close();
     }
+
+
 }

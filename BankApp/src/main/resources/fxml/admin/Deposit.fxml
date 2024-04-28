@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" style="-fx-background-color: #f1e4de;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.eduardomaravill.bankapp.controllers.admin.DepositController">
+   <VBox layoutX="15.0" layoutY="275.0" prefHeight="200.0" prefWidth="820.0" AnchorPane.bottomAnchor="15.0"
+         AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="100.0">
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+         <Text fill="#7c7b89" strokeType="OUTSIDE" strokeWidth="0.0" text="Search by Payee Address:">
+            <styleClass>
+               <String fx:value="strong"/>
+               <String fx:value="b"/>
+               <String fx:value="h4"/>
+            </styleClass>
+         </Text>
+         <TextField fx:id="payeeAddressText" styleClass="h4">
+            <effect>
+               <DropShadow height="2.5" offsetY="5.0" radius="0.125" width="0.0">
+                  <color>
+                     <Color red="0.7647058963775635" green="0.7647058963775635" blue="0.7882353067398071"/>
+                  </color>
+               </DropShadow>
+            </effect>
+         </TextField>
+         <Button fx:id="buttonSearchPayeeAddress" mnemonicParsing="false"
+                 style="-fx-text-fill: #ffffff; -fx-background-color: #0b7fab;" text="Seach">
+            <graphic>
+               <FontAwesomeIconView fill="#f4d75e" glyphName="SEARCH" size="20"/>
+            </graphic>
+            <styleClass>
+               <String fx:value="h5"/>
+               <String fx:value="btn"/>
+            </styleClass>
+            <effect>
+               <DropShadow height="5.0" offsetX="5.0" offsetY="5.0" radius="0.75" width="0.0">
+                  <color>
+                     <Color red="0.7647058963775635" green="0.7647058963775635" blue="0.7882353067398071"/>
+                  </color>
+               </DropShadow>
+            </effect>
+         </Button>
+      </HBox>
+      <ListView fx:id="listViewDeposit" prefHeight="200.0" prefWidth="820.0" style="-fx-background-radius: 10;"/>
+      <VBox alignment="TOP_CENTER" prefHeight="340.0" prefWidth="820.0" spacing="15.0">
+         <padding>
+            <Insets top="20.0"/>
+         </padding>
+         <Text fill="#7c7b89" strokeType="OUTSIDE" strokeWidth="0.0" text="Deposit Section">
+            <styleClass>
+               <String fx:value="strong"/>
+               <String fx:value="b"/>
+               <String fx:value="h4"/>
+            </styleClass>
+         </Text>
+         <Text fill="#7c7b89" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount:">
+            <styleClass>
+               <String fx:value="b"/>
+               <String fx:value="h5"/>
+            </styleClass>
+         </Text>
+         <TextField fx:id="amountDeposit" styleClass="h5">
+            <VBox.margin>
+               <Insets left="250.0" right="250.0"/>
+            </VBox.margin>
+            <effect>
+               <DropShadow height="5.0" offsetY="5.0" radius="0.75" width="0.0">
+                  <color>
+                     <Color red="0.7647058963775635" green="0.7647058963775635" blue="0.7882353067398071"/>
+                  </color>
+               </DropShadow>
+            </effect>
+         </TextField>
+         <Button fx:id="buttonDepositAmount" mnemonicParsing="false"
+                 style="-fx-text-fill: #ffffff; -fx-background-color: #0b7fab;" text="Deposit">
+            <graphic>
+               <FontAwesomeIconView fill="#f4d75e" glyphName="MONEY" size="20"/>
+            </graphic>
+            <styleClass>
+               <String fx:value="h5"/>
+               <String fx:value="btn"/>
+            </styleClass>
+            <effect>
+               <DropShadow height="5.0" offsetX="5.0" offsetY="5.0" radius="0.75" width="0.0">
+                  <color>
+                     <Color red="0.7647058963775635" green="0.7647058963775635" blue="0.7882353067398071"/>
+                  </color>
+               </DropShadow>
+            </effect>
+         </Button>
+      </VBox>
+   </VBox>
+</AnchorPane>

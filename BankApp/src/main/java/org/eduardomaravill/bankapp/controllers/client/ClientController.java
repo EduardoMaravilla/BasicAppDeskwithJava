@@ -13,11 +13,11 @@ public class ClientController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Model.getInstance().getViewFactory().getClientSelectedMenuItem().addListener((observableValue, newVal, oldVal) -> {
-             switch (oldVal){
+        Model.getInstance().getViewFactory().getClientSelectedMenuItem().addListener((observableValue, oldVal, newVal) -> {
+             switch (newVal){
                  case TRANSACTIONS -> clientParent.setCenter(Model.getInstance().getViewFactory().getTransactionView());
                  case ACCOUNTS -> clientParent.setCenter(Model.getInstance().getViewFactory().getAccountsView());
-                 default -> clientParent.setCenter(Model.getInstance().getViewFactory().getDashboardView());
+                 case DASHBOARD -> clientParent.setCenter(Model.getInstance().getViewFactory().getDashboardView());
              }
         });
     }
