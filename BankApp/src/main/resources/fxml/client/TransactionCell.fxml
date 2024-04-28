@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="60.0" prefWidth="550.0" style="-fx-background-radius: 5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <effect>
+      <DropShadow height="5.0" offsetY="5.0" radius="0.75" width="0.0">
+         <color>
+            <Color red="0.7763158082962036" green="0.7763158082962036" blue="0.7763158082962036" />
+         </color>
+      </DropShadow>
+   </effect>
+   <VBox alignment="CENTER" fillWidth="false" prefHeight="60.0" prefWidth="51.0" style="-fx-background-color: #0b7fab; -fx-background-radius: 3;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="505.0" AnchorPane.topAnchor="15.0">
+      <FontAwesomeIconView fx:id="inIco" fill="#f4d75e" glyphName="LONG_ARROW_RIGHT" selectionFill="#f4d75e" size="15" />
+      <FontAwesomeIconView fx:id="outIco" fill="#f4d75e" glyphName="LONG_ARROW_LEFT" selectionFill="#f4d75e" size="15" />
+   </VBox>
+   <Label fx:id="dateTransaction" layoutX="75.0" layoutY="22.0" text="2024-05-24">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="sender" layoutX="192.0" layoutY="22.0" text="Eduardo" textAlignment="RIGHT">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Line endX="-99.70710754394531" endY="-23.8590087890625" layoutX="374.0" layoutY="44.0" startX="-100.0" strokeWidth="3.0" />
+   <Label fx:id="receiver" layoutX="299.0" layoutY="22.0" text="Joel">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="amount" layoutX="472.0" layoutY="17.0" style="-fx-background-color: #0b7fab;" text="2000.00" textFill="WHITE">
+      <graphic>
+         <FontAwesomeIconView fill="#f4d75e" glyphName="DOLLAR" selectionFill="#f4d75e" size="15" />
+      </graphic>
+      <padding>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding>
+   </Label>
+</AnchorPane>
